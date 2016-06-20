@@ -14,16 +14,18 @@
     "request": "^2.55.0",
     "request-debug": "^0.2.0",
     "stream-buffers": "~0.2.5",
-    "through2": "^2.0.0"
+    "through2": "^2.0.0",
+    "coffee-script": "^1.8.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.8.0"
   },
   "files": [
     "dist",
+    "lib",
     "index.js"
   ],
   "scripts": {
+    "install": "coffee --compile --output dist/ lib/",
     "prepublish": "coffee --compile --output dist/ lib/",
     "dev": "coffee --watch --output dist lib/"
   },
