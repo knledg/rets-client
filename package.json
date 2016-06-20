@@ -26,6 +26,7 @@
     "index.js"
   ],
   "scripts": {
+    "install": "coffee --compile --output dist/ lib/",
     "prepublish": "coffee --compile --output dist/ lib/",
     "dev": "coffee --watch --output dist lib/"
   },
