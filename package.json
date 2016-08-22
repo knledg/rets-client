@@ -9,7 +9,7 @@
     "bufferstream": "^0.6.2",
     "crypto": "0.0.3",
     "debug": "^2.2.0",
-    "formidable": "~1.0.15",
+    "formidable": "git+https://github.com/knledg/node-formidable.git#e28e0ab061f0be669d95d1cdbc21ba775297f101",
     "node-expat": "^2.3.10",
     "request": "^2.55.0",
     "request-debug": "^0.2.0",
