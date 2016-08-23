@@ -37,7 +37,6 @@ getObjectStream = (headerInfo, stream, handler, options) -> new Promise (resolve
   
   handleError = (err) ->
     if bodyStream
-      bodyStream.emit('error', err)
       bodyStream.end()
       bodyStream = null
     if objectStreamDone
@@ -85,8 +84,6 @@ getObjectStream = (headerInfo, stream, handler, options) -> new Promise (resolve
     .then () ->
       partDone = true
       handleEnd()
-    .catch (error) ->
-      # swallowing this error, it's already been reported
     parser.onPartData = (b, start, end) ->
       if !bodyStreamDone
         bodyStream.write(b.slice(start, end))
