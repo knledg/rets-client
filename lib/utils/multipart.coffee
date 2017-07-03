@@ -2,7 +2,7 @@
 ### jshint -W097 ###
 'use strict'
 
-MultipartParser = require('formidable/lib/multipart_parser').MultipartParser
+MultipartParser = require('@esvinson/formidable/lib/multipart_parser').MultipartParser
 Promise = require('bluebird')
 through2 = require('through2')
 debug = require('debug')('rets-client:multipart')
