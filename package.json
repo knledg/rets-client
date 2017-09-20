@@ -1,6 +1,6 @@
 {
   "name": "@esvinson/rets-client",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "description": "A RETS client (Real Estate Transaction Standard).",
   "main": "index.js",
   "dependencies": {
